@@ -24,20 +24,31 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- <script>
+function CBR_XML_Daily_Ru(rates) {
+  function trend(current, previous) {
+    if (current > previous) return ' ▲';
+    if (current < previous) return ' ▼';
+    return '';
+  }
+
+  var USDrate = rates.Valute.USD.Value.toFixed(4).replace('.', ',');
+  var USD = document.getElementById('USD');
+  USD.innerHTML = USD.innerHTML.replace('00,0000', USDrate);
+  USD.innerHTML += trend(rates.Valute.USD.Value, rates.Valute.USD.Previous);
+
+  var EURrate = rates.Valute.EUR.Value.toFixed(4).replace('.', ',');
+  var EUR = document.getElementById('EUR');
+  EUR.innerHTML = EUR.innerHTML.replace('00,0000', EURrate);
+  EUR.innerHTML += trend(rates.Valute.EUR.Value, rates.Valute.EUR.Previous);
+}
+</script> -->
+<!-- <link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" /> -->
+<!-- <script src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script> -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
